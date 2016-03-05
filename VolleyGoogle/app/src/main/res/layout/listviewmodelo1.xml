@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.2"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:divider="#cb1d3cff"
+    android:dividerPadding="0.5dp"
+    android:paddingTop="10dp"
+        >
+
+
+    <TextView
+        android:id="@+id/tvlistaEndereco"
+        android:layout_marginTop="8dp"
+        android:text="Endereço:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAlignment="center" />
+    <TextView
+        android:id="@+id/tvlistaLatitude"
+        android:text="Latitude: "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAlignment="center"/>
+    <TextView
+        android:id="@+id/tvlistaLongitude"
+        android:text="Longitude:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textAlignment="center"/>
+
+
+
+</LinearLayout>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.85"
+        android:orientation="vertical"
+        >
+
+
+    <ImageButton
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="2dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:text="EDT"
+        android:background="@drawable/ic_action"
+        android:id="@+id/btnLitaVerMapa"
+
+        android:layout_gravity="center"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Street View"
+        android:textAlignment="center"
+        android:id="@+id/textView3" />
+
+
+</LinearLayout>
+
+
+</LinearLayout>

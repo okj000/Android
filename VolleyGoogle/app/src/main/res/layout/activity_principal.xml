@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fd3a7923"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="#66b1ef37"
+        android:layout_gravity="center"
+        >
+
+    <ImageView
+
+        android:layout_weight="0.2"
+        android:layout_width="64dp"
+        android:layout_height="56dp"
+        android:background="@drawable/position_icon"
+
+        android:id="@+id/imageView"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <TextView android:text="GEO LOCALIZAÇÃO DO GOOGLE"
+        android:layout_weight="0.8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        android:textSize="24dp"
+        android:fontFamily="sans-serif-condensed" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#66b1ef37"
+        >
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:id="@+id/view"
+            android:layout_gravity="center_horizontal"
+            android:background="#fff" />
+
+        <EditText
+        android:layout_margin="8dp"
+        android:textColor="#a21c1c1c"
+        android:id="@+id/edxPesquisa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="15dp"
+        android:hint="Ex: Avenida Higienópolis, Londrina"
+
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#fff"
+            android:alpha="50" />
+
+    <Button
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Procurar Endereço"
+        android:id="@+id/btnCapturar"
+        android:onClick="clicouCapturar"
+        android:background="#3363ff"
+        android:textColor="#fff"
+        />
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff"
+            >
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvExibe"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>
